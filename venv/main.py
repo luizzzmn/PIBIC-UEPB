@@ -14,6 +14,7 @@ while True:
     imgRGB = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     results = faceMesh.process(imgRGB)
     screenHeight, screenWidth, _ = img.shape
+    #a
 
     if results:
         for face in results.multi_face_landmarks:
